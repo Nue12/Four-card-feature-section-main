@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+:root {
+    /* Primary */
+    --Red--: hsl(0, 78%, 62%);
+    --Cyan--: hsl(180, 62%, 55%);
+    --Orange--: hsl(34, 97%, 64%);
+    --Blue--: hsl(212, 86%, 64%);
+    /* neutral */
+    --Very-Dark-Blue--: hsl(234, 12%, 34%);
+    --Grayish-Blue--: hsl(229, 6%, 66%);
+    --Very-Light-Gray--: hsl(0, 0%, 98%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Very-Light-Gray--);
+    color: var(--Very-Dark-Blue--);
+    margin: 20px;
+}
+
+.titleAndContent {
+    text-align: center;
+    max-width: 450px;
+}
+
+.serviceTitle {
+    font-weight: 200;
+}
+
+.titleContent {
+    margin-top: 15px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+    color: var(--Grayish-Blue--);
+}
+
+.cards-holder {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section p {
+    font-size: 13px;
+}
+
+.card-container {
+    width: 350px;
+    background-color: #FFF;
+    margin: 10px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.supervisorContainer {
+    border-top: 3px solid var(--Cyan--);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+
+.teamBuilderContainer {
+    border-top: 3px solid var(--Red--);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    margin-bottom: 20px;
+}
+
+.karmaContainer {
+    border-top: 3px solid var(--Orange--);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    margin-top: 20px;
+}
+
+.calculatorContainer {
+    border-top: 3px solid var(--Blue--); 
+    border-left: 8px solid transparent;   
+    border-right: 8px solid transparent;
+}
+
+@media screen and (max-width: 1110px) {
+    .cards-holder {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .titleContent {
+        font-size: 15px;
+    }
+    .title {
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.attribution { 
+    margin-top: 20px;
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
